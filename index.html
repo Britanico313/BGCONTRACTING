@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script>
-    function toggleMenu() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+      toggleButton.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    });
   </script>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
@@ -17,8 +21,8 @@
       <a href="index.html">
         <img src="images/B&G LOGO .png" alt="G&M Logo" class="h-14">
       </a>
-      <button class="text-yellow-400 md:hidden" onclick="toggleMenu()">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <button id="menu-toggle" class="md:hidden">
+        <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
@@ -29,7 +33,7 @@
         <a href="contactus.html" class="text-yellow-400 hover:text-white font-semibold">Contact</a>
       </nav>
     </div>
-    <nav id="mobile-menu" class="md:hidden hidden flex flex-col gap-4 mt-4">
+    <nav id="mobile-menu" class="hidden md:hidden flex-col gap-4 mt-4 transition-all duration-300 ease-in-out">
       <a href="index.html" class="text-yellow-400 hover:text-white font-semibold">Home</a>
       <a href="about.html" class="text-yellow-400 hover:text-white font-semibold">About</a>
       <a href="projects.html" class="text-yellow-400 hover:text-white font-semibold">Projects</a>
@@ -37,7 +41,6 @@
     </nav>
   </header>
 
-  <!-- Page-specific content goes here -->
   <section class="text-center bg-white py-16 px-4">
     <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to G&M Contracting Services</h1>
     <p class="text-lg text-gray-600 max-w-2xl mx-auto">
