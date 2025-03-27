@@ -5,39 +5,41 @@
   <title>Our Projects</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <img src="images/B&G LOGO .png" alt="G&M Logo">
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <header class="bg-gray-900 text-white flex items-center justify-between px-6 py-4">
+    <a href="index.html" class="block bg-white p-1 rounded shadow hover:shadow-lg hover:scale-105 transition">
+      <img src="images/B&G LOGO .png" alt="G&M Logo" class="h-14">
+    </a>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contactus.html">Contact</a></li>
+      <ul class="flex gap-6">
+        <li><a href="index.html" class="text-yellow-400 hover:text-white font-semibold">Home</a></li>
+        <li><a href="about.html" class="text-yellow-400 hover:text-white font-semibold">About</a></li>
+        <li><a href="projects.html" class="text-yellow-400 hover:text-white font-semibold">Projects</a></li>
+        <li><a href="contactus.html" class="text-yellow-400 hover:text-white font-semibold">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section>
-    <h1>Project Gallery</h1>
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-bold text-center mb-10">Project Gallery</h1>
 
-    <h2>Series 1 – Kitchen Remodel</h2>
-    <div class="gallery">
-      <img src="images/S1P1.JPG">
-      <img src="images/S1P2.JPG">
-      <img src="images/S1P3.JPG">
-      <img src="images/S1P4.JPG">
+    <h2 class="text-2xl font-semibold text-center mb-4">Series 1 – Kitchen Remodel</h2>
+    <div class="flex flex-wrap justify-center gap-6 mb-10">
+      <img src="images/S1P1.JPG" class="w-64 rounded-lg shadow">
+      <img src="images/S1P2.JPG" class="w-64 rounded-lg shadow">
+      <img src="images/S1P3.JPG" class="w-64 rounded-lg shadow">
+      <img src="images/S1P4.JPG" class="w-64 rounded-lg shadow">
     </div>
 
-    <h2>Series 2 – Office Build</h2>
-    <div class="gallery">
-      <img src="images/S2P1.JPG">
-      <img src="images/S2P2.JPG">
-      <img src="images/S2P3.JPG">
+    <h2 class="text-2xl font-semibold text-center mb-4">Series 2 – Office Build</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <img src="images/S2P1.JPG" class="w-64 rounded-lg shadow">
+      <img src="images/S2P2.JPG" class="w-64 rounded-lg shadow">
+      <img src="images/S2P3.JPG" class="w-64 rounded-lg shadow">
     </div>
   </section>
 
-  <footer>
+  <footer class="bg-gray-900 text-white text-center py-4 text-sm">
     &copy; 2025 G&M Contracting Services LLC
   </footer>
 </body>

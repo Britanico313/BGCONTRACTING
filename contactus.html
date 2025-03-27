@@ -5,46 +5,51 @@
   <title>Contact Us</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <img src="images/B&G LOGO .png" alt="G&M Logo">
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <header class="bg-gray-900 text-white flex items-center justify-between px-6 py-4">
+    <a href="index.html" class="block bg-white p-1 rounded shadow hover:shadow-lg hover:scale-105 transition">
+      <img src="images/B&G LOGO .png" alt="G&M Logo" class="h-14">
+    </a>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contactus.html">Contact</a></li>
+      <ul class="flex gap-6">
+        <li><a href="index.html" class="text-yellow-400 hover:text-white font-semibold">Home</a></li>
+        <li><a href="about.html" class="text-yellow-400 hover:text-white font-semibold">About</a></li>
+        <li><a href="projects.html" class="text-yellow-400 hover:text-white font-semibold">Projects</a></li>
+        <li><a href="contactus.html" class="text-yellow-400 hover:text-white font-semibold">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section>
-    <h1>Get in Touch</h1>
-    <div class="team-member">
-      <img src="images/MVillegas.JPG" alt="Michael Villegas">
-      <div>
-        <strong>Michael Villegas</strong><br>
-        Project Manager<br>
-        📞 (313) 742-6147<br>
-        ✉️ <a href="mailto:Michaelvillegas942@gmail.com">Michaelvillegas942@gmail.com</a>
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-bold text-center mb-10">Get in Touch</h1>
+
+    <div class="flex flex-col gap-10 items-center">
+      <div class="flex gap-6 items-center max-w-xl w-full">
+        <img src="images/MVillegas.JPG" alt="Michael Villegas" class="w-24 h-24 rounded-full shadow object-cover">
+        <div>
+          <strong>Michael Villegas</strong><br>
+          Project Manager<br>
+          📞 (313) 742-6147<br>
+          ✉️ <a href="mailto:Michaelvillegas942@gmail.com" class="text-blue-500">Michaelvillegas942@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="flex gap-6 items-center max-w-xl w-full">
+        <img src="images/Germanphoto.JPG" alt="German Morales" class="w-24 h-24 rounded-full shadow object-cover">
+        <div>
+          <strong>German Morales</strong><br>
+          Field Manager<br>
+          📞 (269) 200-7644<br>
+          ✉️ <a href="mailto:Rossgm20@gmail.com" class="text-blue-500">Rossgm20@gmail.com</a>
+        </div>
       </div>
     </div>
 
-    <div class="team-member">
-      <img src="images/Germanphoto.JPG" alt="German Morales">
-      <div>
-        <strong>German Morales</strong><br>
-        Field Manager<br>
-        📞 (269) 200-7644<br>
-        ✉️ <a href="mailto:Rossgm20@gmail.com">Rossgm20@gmail.com</a>
-      </div>
-    </div>
-
-    <h2>Office Phone</h2>
-    <p>(817) 455-5066</p>
+    <h2 class="text-center text-xl font-semibold mt-12">Office Phone</h2>
+    <p class="text-center text-lg">(817) 455-5066</p>
   </section>
 
-  <footer>
+  <footer class="bg-gray-900 text-white text-center py-4 text-sm">
     &copy; 2025 G&M Contracting Services LLC
   </footer>
 </body>
